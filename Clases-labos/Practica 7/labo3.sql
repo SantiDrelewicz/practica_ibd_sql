@@ -1,7 +1,7 @@
 /*
 1. ¿Hubo pacientes a los que les subio la temperatura durante la internación?
 */
--- Creo una tabla apareando cada registro con el siguiente
+-- Creo una tabla apareando cada registro con el siguiente del mismo paciente
 WITH numeradas AS (
     SELECT ROW_NUMBER() OVER() AS orden, t.*
     FROM temperaturas t
